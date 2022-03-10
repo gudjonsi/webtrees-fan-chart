@@ -51,7 +51,8 @@ export default class Svg
             .attr("height", "100%")
             .attr("text-rendering", "geometricPrecision")
             .attr("text-anchor", "middle")
-            .attr("xmlns:xlink", "https://www.w3.org/1999/xlink");
+            .attr("xmlns:xlink", "https://www.w3.org/1999/xlink")
+            .attr("xmlns:ev", "https://www.w3.org/2001/xml-events");
 
         new Filter(this._defs.get());
     }

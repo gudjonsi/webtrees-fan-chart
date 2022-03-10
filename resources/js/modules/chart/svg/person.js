@@ -284,7 +284,7 @@ export default class Person
             .append("g")
             .attr("class", "name")
             .style("font-size", this.getFontSize(data) + "px")
-            .style("fill", this._configuration.fontColor);
+            .attr("fill", this._configuration.fontColor);
     }
 
     /**

@@ -42,3 +42,7 @@ export {
 export {
     timer
 } from "d3-timer";
+
+export {
+    path
+} from "d3-path";

@@ -90,14 +90,14 @@ export default class Update
             this._svg.get()
                 .selectAll("g.person.remove g.arc path")
                 .transition(t)
-                .style("fill", () => this._configuration.hideEmptySegments ? null : "rgb(235, 235, 235)")
+                .attr("fill", () => this._configuration.hideEmptySegments ? null : "rgb(235, 235, 235)")
                 .style("opacity", () => this._configuration.hideEmptySegments ? 1e-6 : null);
 
             // Fade in new arcs
             this._svg.get()
                 .selectAll("g.person.new g.arc path")
                 .transition(t)
-                .style("fill", "rgb(250, 250, 250)")
+                .attr("fill", "rgb(250, 250, 250)")
                 .style("opacity", () => this._configuration.hideEmptySegments ? 1 : null);
 
             // Fade out all old labels and color group
